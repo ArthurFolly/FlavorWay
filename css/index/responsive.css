@@ -1,0 +1,333 @@
+/* Mobile First Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Header */
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    border-top: 1px solid #e9ecef;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 3rem 0;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  /* Cuisines */
+  .cuisines-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Recipes */
+  .recipes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* Techniques */
+  .techniques-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .masterclass-banner {
+    padding: 2rem;
+  }
+
+  /* Ingredients */
+  .search-container {
+    flex-direction: column;
+  }
+
+  .ingredient-categories {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .combinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Community */
+  .community-stats {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .community-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .activity-post {
+    padding: 1.5rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* Typography */
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 1rem 0;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-icon i {
+    font-size: 1.5rem;
+  }
+
+  /* Buttons */
+  .btn-lg {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Cards */
+  .recipe-card,
+  .technique-card,
+  .cuisine-card {
+    margin-bottom: 1rem;
+  }
+
+  .recipe-content,
+  .technique-content,
+  .cuisine-content {
+    padding: 1rem;
+  }
+
+  /* Stats */
+  .stat-item {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  /* Search */
+  .ingredient-search {
+    padding: 2rem 1rem;
+  }
+
+  .search-input input {
+    padding: 0.875rem 0.875rem 0.875rem 2.5rem;
+  }
+
+  /* Community */
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .stat-card .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .activity-post {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .post-avatar {
+    align-self: flex-start;
+  }
+
+  /* Ingredient categories */
+  .ingredient-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .ingredient-category {
+    height: 120px;
+  }
+
+  /* Combinations */
+  .combination-ingredients {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .section-header h2 {
+    font-size: 3rem;
+  }
+
+  .cuisines-grid,
+  .recipes-grid {
+    gap: 3rem;
+  }
+
+  .techniques-grid {
+    gap: 2.5rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .footer,
+  .btn,
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: black;
+    background: white;
+  }
+
+  .hero {
+    background: none;
+    color: black;
+    padding: 2rem 0;
+  }
+
+  .section-header h2 {
+    color: black;
+    font-size: 18pt;
+  }
+
+  .recipe-card,
+  .technique-card,
+  .cuisine-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --brown-color: #000000;
+    --gray-medium: #666666;
+  }
+
+  .btn {
+    border: 2px solid currentColor;
+  }
+
+  .recipe-card,
+  .technique-card,
+  .cuisine-card {
+    border: 2px solid #000000;
+  }
+}
