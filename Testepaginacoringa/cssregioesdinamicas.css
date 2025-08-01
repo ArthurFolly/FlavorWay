@@ -1,0 +1,610 @@
+/* CSS para página dinâmica de regiões */
+
+/* Variáveis CSS dinâmicas (definidas inline no PHP) */
+.regiao-theme {
+    --primary-color: #ea580c;
+    --secondary-color: #eab308;
+    --accent-color: #dc2626;
+    --gradient-primary: linear-gradient(135deg, #ea580c 0%, #eab308 100%);
+    --gradient-secondary: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+}
+
+/* Header da região */
+.regiao-header {
+    background: rgba(234, 88, 12, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.regiao-header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.region-selector {
+    margin-left: 20px;
+}
+
+.region-selector select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.region-selector select:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.region-selector select option {
+    background: #333;
+    color: white;
+}
+
+/* Hero da região */
+.regiao-hero {
+    background: linear-gradient(135deg, #ea580c 0%, #eab308 50%, #dc2626 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.regiao-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.regiao-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Estados Section */
+.estados-section {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #fff7ed 0%, white 100%);
+}
+
+.estados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.estado-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.estado-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.estado-header {
+    height: 120px;
+    background: var(--gradient-primary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.estado-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.estado-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.estado-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.estado-content p {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.estado-body {
+    padding: 20px;
+}
+
+.estado-body h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.estado-especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.especialidade-tag {
+    background: rgba(234, 88, 12, 0.1);
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.estado-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+.estado-button {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.estado-button:hover {
+    background: var(--accent-color);
+    transform: translateY(-1px);
+}
+
+/* Ingredientes */
+.ingredientes {
+    padding: 80px 0;
+    background: white;
+}
+
+.ingredientes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.ingrediente-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.ingrediente-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.ingrediente-header {
+    height: 100px;
+    background: var(--gradient-primary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.ingrediente-content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.ingrediente-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.ingrediente-content p {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.ingrediente-body {
+    padding: 20px;
+}
+
+.ingrediente-body h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.ingrediente-body p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.ingrediente-usos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.uso-tag {
+    background: rgba(234, 88, 12, 0.1);
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Técnicas */
+.tecnicas {
+    padding: 80px 0;
+    background: linear-gradient(180deg, white 0%, #fff7ed 100%);
+}
+
+.tecnicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.tecnica-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.tecnica-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.tecnica-header {
+    height: 140px;
+    background: var(--gradient-secondary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.tecnica-badges {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
+}
+
+.tecnica-badges .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.bg-green-600 { background: #16a34a; }
+.bg-yellow-600 { background: #ca8a04; }
+.bg-red-600 { background: #dc2626; }
+
+.tecnica-icon {
+    font-size: 3rem;
+    position: relative;
+    z-index: 10;
+}
+
+.tecnica-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.tecnica-card:hover .tecnica-overlay {
+    opacity: 1;
+}
+
+.play-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+.tecnica-body {
+    padding: 20px;
+}
+
+.tecnica-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.tecnica-emoji {
+    font-size: 1.5rem;
+}
+
+.tecnica-title h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.tecnica-body p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.card-button {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background: var(--accent-color);
+    transform: translateY(-1px);
+}
+
+/* Cultura */
+.cultura {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #fff7ed 0%, white 100%);
+}
+
+.cultura-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.cultura-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cultura-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.cultura-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.cultura-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.cultura-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+    font-size: 1.125rem;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e5e7eb;
+    border-top: 2px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Filtros com tema da região */
+.filtros .filtro-btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 0 8px 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtros .filtro-btn:hover,
+.filtros .filtro-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Botões com tema da região */
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-outline {
+    border-color: white;
+    color: white;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* Highlight com cor da região */
+.highlight {
+    color: var(--secondary-color);
+}
+
+/* Footer da região */
+.regiao-footer {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .regiao-header .header-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .region-selector {
+        margin-left: 0;
+    }
+    
+    .estados-grid,
+    .ingredientes-grid,
+    .tecnicas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cultura-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.estado-card,
+.ingrediente-card,
+.tecnica-card,
+.cultura-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.estado-card:nth-child(2) { animation-delay: 0.1s; }
+.estado-card:nth-child(3) { animation-delay: 0.2s; }
+.estado-card:nth-child(4) { animation-delay: 0.3s; }
+
+.ingrediente-card:nth-child(2) { animation-delay: 0.1s; }
+.ingrediente-card:nth-child(3) { animation-delay: 0.2s; }
+.ingrediente-card:nth-child(4) { animation-delay: 0.3s; }
+
+.tecnica-card:nth-child(2) { animation-delay: 0.1s; }
+.tecnica-card:nth-child(3) { animation-delay: 0.2s; }
+.tecnica-card:nth-child(4) { animation-delay: 0.3s; }
+
+.cultura-card:nth-child(2) { animation-delay: 0.2s; }
+.cultura-card:nth-child(3) { animation-delay: 0.4s; }

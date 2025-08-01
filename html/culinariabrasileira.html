@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorWay - Culinária Brasileira</title>
+    <link rel="stylesheet" href="/FlavorWayV2//css/culinariabrasileira.css">
+    <script src="/FlavorWayV2/js/culinariabrasileira.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div>
+                        <h1>FlavorWay</h1>
+                        <span>Culinária Brasileira</span>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <a href="/FlavorWayV2/html/index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Início</span>
+                    </a>
+                    <a href="#receitas" class="nav-link">Receitas</a>
+                    <a href="#tecnicas" class="nav-link">Técnicas</a>
+                    <a href="#ingredientes" class="nav-link">Ingredientes</a>
+                    <a href="#regioes" class="nav-link">Regiões</a>
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                        Buscar
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Culinária <span class="highlight">Brasileira</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Descubra os sabores únicos do Brasil! Uma jornada gastronômica pelas cinco regiões, 
+                    explorando ingredientes tropicais, temperos marcantes e tradições culinárias que fazem 
+                    da nossa cozinha uma das mais diversas e saborosas do mundo.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-utensils"></i>
+                        Explorar Receitas
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Ver Regiões
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regiões Brasileiras -->
+    <section id="regioes" class="regioes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore as <span class="highlight">Cinco Regiões</span></h2>
+                <p>Cada região do Brasil tem sua identidade culinária única, com ingredientes, técnicas e sabores que contam a história do nosso povo.</p>
+            </div>
+            <div class="regioes-grid" id="regioesGrid">
+                <!-- Regiões serão carregadas via JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- Receitas em Destaque -->
+    <section id="receitas" class="receitas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Receitas <span class="highlight">Tradicionais</span></h2>
+                <p>Aprenda a preparar os pratos mais icônicos da culinária brasileira com receitas autênticas e dicas especiais.</p>
+            </div>
+            <!-- Filtros -->
+            <div class="filtros" id="filtros">
+                <button class="filtro-btn active" data-filtro="todas">Todas</button>
+                <button class="filtro-btn" data-filtro="nordeste">Nordeste</button>
+                <button class="filtro-btn" data-filtro="sudeste">Sudeste</button>
+                <button class="filtro-btn" data-filtro="sul">Sul</button>
+                <button class="filtro-btn" data-filtro="norte">Norte</button>
+                <button class="filtro-btn" data-filtro="centro-oeste">Centro-Oeste</button>
+            </div>
+            
+            <div class="receitas-grid" id="receitasGrid">
+                 <!-- Receitas serão carregadas via JavaScript -->
+            </div>
+            <div class="section-footer">
+                <button class="btn btn-primary">Ver Todas as Receitas Brasileiras</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Técnicas Brasileiras -->
+    <section id="tecnicas" class="tecnicas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Técnicas <span class="highlight">Tradicionais</span></h2>
+                <p>Domine as técnicas culinárias que fazem da cozinha brasileira única no mundo.</p>
+            </div>
+
+            <div class="tecnicas-grid" id="tecnicasGrid">
+                <!-- Técnicas serão carregadas via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredientes Brasileiros -->
+    <section id="ingredientes" class="ingredientes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ingredientes <span class="highlight">Únicos</span></h2>
+                <p>Conheça os ingredientes que fazem da culinária brasileira tão especial e diversa.</p>
+            </div>
+            
+            <div class="ingredientes-grid" id="ingredientesGrid">
+                <!-- Ingredientes serão carregados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FlavorWay Brasil</h3>
+                    <p>Celebrando a riqueza e diversidade da culinária brasileira. Dos sabores amazônicos aos temperos nordestinos, uma jornada gastronômica pelo nosso país.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Regiões</h4>
+                    <ul>
+                        <li><a href="#">Nordeste</a></li>
+                        <li><a href="#">Sudeste</a></li>
+                        <li><a href="#">Sul</a></li>
+                        <li><a href="#">Norte</a></li>
+                        <li><a href="#">Centro-Oeste</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Pratos Típicos</h4>
+                    <ul>
+                        <li><a href="#">Feijoada</a></li>
+                        <li><a href="#">Acarajé</a></li>
+                        <li><a href="#">Churrasco</a></li>
+                        <li><a href="#">Moqueca</a></li>
+                        <li><a href="#">Brigadeiro</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Voltar ao FlavorWay</h4>
+                    <ul>
+                        <li><a href="#">Página Principal</a></li>
+                        <li><a href="#">Outras Culinárias</a></li>
+                        <li><a href="#">Comunidade</a></li>
+                        <li><a href="#">Técnicas Gerais</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FlavorWay. Todos os direitos reservados. Feito com ❤️ para os amantes da culinária brasileira.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Receita -->
+    <div id="receitaModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <div class="modal-icon">🍽️</div>
+                    <div class="modal-title-info">
+                        <h2 id="modalTitulo"></h2>
+                        <div class="modal-meta" id="modalMeta"></div>
+                    </div>
+                </div>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-description" id="modalDescricao"></div>
+                <div class="modal-tags" id="modalTags"></div>
+                
+                <div class="modal-content-grid">
+                    <div class="modal-ingredients">
+                        <h3><i class="fas fa-shopping-cart"></i> Ingredientes</h3>
+                        <div class="recipe-info" id="recipeInfo"></div>
+                        <div class="ingredients-list" id="ingredientsList"></div>
+                        <div class="nutrition-info" id="nutritionInfo"></div>
+                    </div>
+                    
+                    <div class="modal-instructions">
+                        <h3><i class="fas fa-chef-hat"></i> Modo de Preparo</h3>
+                        <div class="instructions-list" id="instructionsList"></div>
+                        <div class="chef-tips" id="chefTips"></div>
+                        
+                        <div class="modal-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-bookmark"></i>
+                                Salvar Receita
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-share"></i>
+                                Compartilhar
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-print"></i>
+                                Imprimir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

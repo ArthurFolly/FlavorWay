@@ -1,0 +1,387 @@
+/* Estilos específicos para páginas de regiões */
+
+/* Tema Nordeste */
+.nordeste-theme {
+    --primary-color: #ea580c;
+    --secondary-color: #eab308;
+    --accent-color: #dc2626;
+    --gradient-primary: linear-gradient(135deg, #ea580c 0%, #eab308 100%);
+    --gradient-secondary: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+}
+
+.nordeste-header {
+    background: rgba(234, 88, 12, 0.95);
+}
+
+.nordeste-hero {
+    background: linear-gradient(135deg, #ea580c 0%, #eab308 50%, #dc2626 100%);
+}
+
+.nordeste-footer {
+    background: #ea580c;
+}
+
+/* Tema Sudeste */
+.sudeste-theme {
+    --primary-color: #dc2626;
+    --secondary-color: #7c2d12;
+    --accent-color: #ea580c;
+    --gradient-primary: linear-gradient(135deg, #dc2626 0%, #7c2d12 100%);
+    --gradient-secondary: linear-gradient(135deg, #7c2d12 0%, #ea580c 100%);
+}
+
+.sudeste-header {
+    background: rgba(220, 38, 38, 0.95);
+}
+
+.sudeste-hero {
+    background: linear-gradient(135deg, #dc2626 0%, #7c2d12 50%, #ea580c 100%);
+}
+
+.sudeste-footer {
+    background: #dc2626;
+}
+
+/* Tema Sul */
+.sul-theme {
+    --primary-color: #16a34a;
+    --secondary-color: #7c2d12;
+    --accent-color: #eab308;
+    --gradient-primary: linear-gradient(135deg, #16a34a 0%, #7c2d12 100%);
+    --gradient-secondary: linear-gradient(135deg, #7c2d12 0%, #eab308 100%);
+}
+
+.sul-header {
+    background: rgba(22, 163, 74, 0.95);
+}
+
+.sul-hero {
+    background: linear-gradient(135deg, #16a34a 0%, #7c2d12 50%, #eab308 100%);
+}
+
+.sul-footer {
+    background: #16a34a;
+}
+
+/* Tema Norte */
+.norte-theme {
+    --primary-color: #16a34a;
+    --secondary-color: #eab308;
+    --accent-color: #059669;
+    --gradient-primary: linear-gradient(135deg, #16a34a 0%, #eab308 100%);
+    --gradient-secondary: linear-gradient(135deg, #059669 0%, #16a34a 100%);
+}
+
+.norte-header {
+    background: rgba(22, 163, 74, 0.95);
+}
+
+.norte-hero {
+    background: linear-gradient(135deg, #16a34a 0%, #eab308 50%, #059669 100%);
+}
+
+.norte-footer {
+    background: #16a34a;
+}
+
+/* Tema Centro-Oeste */
+.centro-oeste-theme {
+    --primary-color: #7c2d12;
+    --secondary-color: #ea580c;
+    --accent-color: #eab308;
+    --gradient-primary: linear-gradient(135deg, #7c2d12 0%, #ea580c 100%);
+    --gradient-secondary: linear-gradient(135deg, #ea580c 0%, #eab308 100%);
+}
+
+.centro-oeste-header {
+    background: rgba(124, 45, 18, 0.95);
+}
+
+.centro-oeste-hero {
+    background: linear-gradient(135deg, #7c2d12 0%, #ea580c 50%, #eab308 100%);
+}
+
+.centro-oeste-footer {
+    background: #7c2d12;
+}
+
+/* Estados Section */
+.estados-section {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #fff7ed 0%, white 100%);
+}
+
+.estados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.estado-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.estado-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.estado-header {
+    height: 120px;
+    background: var(--gradient-primary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.estado-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.estado-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.estado-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.estado-content p {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.estado-body {
+    padding: 20px;
+}
+
+.estado-body h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.estado-especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.especialidade-tag {
+    background: rgba(234, 88, 12, 0.1);
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.estado-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+.estado-button {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.estado-button:hover {
+    background: var(--accent-color);
+    transform: translateY(-1px);
+}
+
+/* Cultura Section */
+.cultura {
+    padding: 80px 0;
+    background: linear-gradient(180deg, white 0%, #fff7ed 100%);
+}
+
+.cultura-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.cultura-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.cultura-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.cultura-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.cultura-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.cultura-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Filtros específicos por região */
+.filtros .filtro-btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filtros .filtro-btn:hover,
+.filtros .filtro-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Cards com tema da região */
+.receita-card .receita-header {
+    background: var(--gradient-primary);
+}
+
+.receita-card .card-button {
+    background: var(--primary-color);
+}
+
+.receita-card .card-button:hover {
+    background: var(--accent-color);
+}
+
+.ingrediente-card .ingrediente-header {
+    background: var(--gradient-primary);
+}
+
+.tecnica-card .tecnica-header {
+    background: var(--gradient-secondary);
+}
+
+.tecnica-card .card-button {
+    background: var(--primary-color);
+}
+
+.tecnica-card .card-button:hover {
+    background: var(--accent-color);
+}
+
+/* Botões com tema da região */
+.btn-primary {
+    background: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--accent-color);
+}
+
+.btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* Highlight com cor da região */
+.highlight {
+    color: var(--secondary-color);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .estados-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cultura-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+/* Animações específicas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.estado-card,
+.cultura-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.estado-card:nth-child(2) { animation-delay: 0.1s; }
+.estado-card:nth-child(3) { animation-delay: 0.2s; }
+.estado-card:nth-child(4) { animation-delay: 0.3s; }
+
+.cultura-card:nth-child(2) { animation-delay: 0.2s; }
+.cultura-card:nth-child(3) { animation-delay: 0.4s; }
+
+/* Efeitos hover especiais */
+.estado-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.estado-card:hover::before {
+    left: 100%;
+}
