@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinária Brasileira - FlavorWay</title>
+    <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/culinaria-brasileira.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>FlavorWay</h1>
+                        <span class="tagline">Culinária Brasileira</span>
+                    </a>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Início
+                    </a>
+                    <a href="#receitas" class="nav-link">Receitas</a>
+                    <a href="#tecnicas" class="nav-link">Técnicas</a>
+                    <a href="#ingredientes" class="nav-link">Ingredientes</a>
+                    <a href="#regioes" class="nav-link">Regiões</a>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-search"></i>
+                        Buscar
+                    </button>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-brasil">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <i class="fas fa-flag"></i>
+                </div>
+                <h1 class="hero-title">
+                    Culinária <span class="text-accent">Brasileira</span>
+                </h1>
+                <p class="hero-description">
+                    Descubra os sabores únicos do Brasil! Uma jornada gastronômica pelas cinco regiões, 
+                    explorando ingredientes tropicais, temperos marcantes e tradições culinárias que fazem 
+                    da nossa cozinha uma das mais diversas e saborosas do mundo.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-accent btn-lg">
+                        <i class="fas fa-utensils"></i>
+                        Explorar Receitas
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline btn-lg">
+                        <i class="fas fa-map-marked-alt"></i>
+                        Ver Regiões
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Receitas Tradicionais</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Regiões Culinárias</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">80+</div>
+                        <div class="stat-label">Ingredientes Únicos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regiões Brasileiras -->
+    <section id="regioes" class="regioes-brasil">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore as <span class="text-primary">Cinco Regiões</span></h2>
+                <p>Cada região do Brasil tem sua identidade culinária única, com ingredientes, técnicas e sabores que contam a história do nosso povo.</p>
+            </div>
+            
+            <div class="regioes-grid">
+                <div class="regiao-card nordeste">
+                    <div class="regiao-image">
+                        <div class="regiao-overlay"></div>
+                        <div class="regiao-content">
+                            <h3>Nordeste</h3>
+                            <p>Sabores intensos e temperos marcantes</p>
+                            <div class="regiao-specialties">
+                                <span>Acarajé</span>
+                                <span>Baião de Dois</span>
+                                <span>Carne de Sol</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regiao-info">
+                        <h4>Culinária Nordestina</h4>
+                        <p>Rica em frutos do mar, mandioca, coco e dendê. Influência africana e indígena forte.</p>
+                        <div class="regiao-stats">
+                            <span>35+ receitas</span>
+                            <span>8 técnicas</span>
+                        </div>
+                        <button class="btn btn-primary">Explorar Região</button>
+                    </div>
+                </div>
+                
+                <div class="regiao-card sudeste">
+                    <div class="regiao-image">
+                        <div class="regiao-overlay"></div>
+                        <div class="regiao-content">
+                            <h3>Sudeste</h3>
+                            <p>Tradição mineira e paulista</p>
+                            <div class="regiao-specialties">
+                                <span>Feijoada</span>
+                                <span>Pão de Açúcar</span>
+                                <span>Virado à Paulista</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regiao-info">
+                        <h4>Culinária do Sudeste</h4>
+                        <p>Fusão de tradições portuguesas, africanas e italianas. Pratos fartos e saborosos.</p>
+                        <div class="regiao-stats">
+                            <span>40+ receitas</span>
+                            <span>10 técnicas</span>
+                        </div>
+                        <button class="btn btn-primary">Explorar Região</button>
+                    </div>
+                </div>
+                
+                <div class="regiao-card sul">
+                    <div class="regiao-image">
+                        <div class="regiao-overlay"></div>
+                        <div class="regiao-content">
+                            <h3>Sul</h3>
+                            <p>Churrasco e tradições gaúchas</p>
+                            <div class="regiao-specialties">
+                                <span>Churrasco</span>
+                                <span>Chimarrão</span>
+                                <span>Barreado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regiao-info">
+                        <h4>Culinária do Sul</h4>
+                        <p>Influência europeia forte, especialmente alemã e italiana. Carnes e vinhos.</p>
+                        <div class="regiao-stats">
+                            <span>30+ receitas</span>
+                            <span>6 técnicas</span>
+                        </div>
+                        <button class="btn btn-primary">Explorar Região</button>
+                    </div>
+                </div>
+                
+                <div class="regiao-card norte">
+                    <div class="regiao-image">
+                        <div class="regiao-overlay"></div>
+                        <div class="regiao-content">
+                            <h3>Norte</h3>
+                            <p>Sabores amazônicos únicos</p>
+                            <div class="regiao-specialties">
+                                <span>Tucumã</span>
+                                <span>Pirarucu</span>
+                                <span>Açaí</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regiao-info">
+                        <h4>Culinária do Norte</h4>
+                        <p>Ingredientes exóticos da Amazônia. Peixes, frutas tropicais e raízes.</p>
+                        <div class="regiao-stats">
+                            <span>25+ receitas</span>
+                            <span>5 técnicas</span>
+                        </div>
+                        <button class="btn btn-primary">Explorar Região</button>
+                    </div>
+                </div>
+                
+                <div class="regiao-card centro-oeste">
+                    <div class="regiao-image">
+                        <div class="regiao-overlay"></div>
+                        <div class="regiao-content">
+                            <h3>Centro-Oeste</h3>
+                            <p>Pantanal e cerrado</p>
+                            <div class="regiao-specialties">
+                                <span>Pacu Assado</span>
+                                <span>Pequi</span>
+                                <span>Farofa de Banana</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regiao-info">
+                        <h4>Culinária do Centro-Oeste</h4>
+                        <p>Peixes de água doce, frutas do cerrado e influência pantaneira.</p>
+                        <div class="regiao-stats">
+                            <span>20+ receitas</span>
+                            <span>4 técnicas</span>
+                        </div>
+                        <button class="btn btn-primary">Explorar Região</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Receitas em Destaque -->
+    <section id="receitas" class="receitas-brasil">
+        <div class="container">
+            <div class="section-header">
+                <h2>Receitas <span class="text-accent">Tradicionais</span></h2>
+                <p>Aprenda a preparar os pratos mais icônicos da culinária brasileira com receitas autênticas e dicas especiais.</p>
+            </div>
+            
+            <div class="receitas-grid">
+                <div class="receita-card destaque">
+                    <div class="receita-image">
+                        <img src="https://via.placeholder.com/400x300/BF412C/FFFFFF?text=Feijoada+Completa" alt="Feijoada Completa">
+                        <div class="receita-difficulty">Intermediário</div>
+                        <button class="receita-bookmark">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <div class="receita-badge">Prato Nacional</div>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Feijoada Completa</h3>
+                        <p>O prato mais tradicional do Brasil, com feijão preto, carnes defumadas e acompanhamentos clássicos.</p>
+                        <div class="receita-meta">
+                            <span><i class="fas fa-clock"></i> 3h 30min</span>
+                            <span><i class="fas fa-users"></i> 8 pessoas</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <div class="receita-tags">
+                            <span class="tag">Tradicional</span>
+                            <span class="tag">Feijão</span>
+                            <span class="tag">Carnes</span>
+                        </div>
+                        <button class="btn btn-primary">Ver Receita Completa</button>
+                    </div>
+                </div>
+                
+                <div class="receita-card">
+                    <div class="receita-image">
+                        <img src="https://via.placeholder.com/350x250/FFAA42/FFFFFF?text=Acarajé" alt="Acarajé">
+                        <div class="receita-difficulty">Avançado</div>
+                        <button class="receita-bookmark">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Acarajé Baiano</h3>
+                        <p>Bolinho de feijão fradinho frito no dendê, recheado com vatapá, caruru e camarão seco.</p>
+                        <div class="receita-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15min</span>
+                            <span><i class="fas fa-users"></i> 6 pessoas</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <div class="receita-tags">
+                            <span class="tag">Nordeste</span>
+                            <span class="tag">Dendê</span>
+                        </div>
+                        <button class="btn btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+                
+                <div class="receita-card">
+                    <div class="receita-image">
+                        <img src="https://via.placeholder.com/350x250/F07E42/FFFFFF?text=Moqueca" alt="Moqueca de Peixe">
+                        <div class="receita-difficulty">Básico</div>
+                        <button class="receita-bookmark">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Moqueca de Peixe</h3>
+                        <p>Peixe cozido no leite de coco com dendê, pimentões e coentro. Sabor do mar brasileiro.</p>
+                        <div class="receita-meta">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-users"></i> 4 pessoas</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <div class="receita-tags">
+                            <span class="tag">Peixe</span>
+                            <span class="tag">Coco</span>
+                        </div>
+                        <button class="btn btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+                
+                <div class="receita-card">
+                    <div class="receita-image">
+                        <img src="https://via.placeholder.com/350x250/754D43/FFFFFF?text=Brigadeiro" alt="Brigadeiro Gourmet">
+                        <div class="receita-difficulty">Básico</div>
+                        <button class="receita-bookmark">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Brigadeiro Gourmet</h3>
+                        <p>O doce mais amado do Brasil em versão sofisticada, com chocolate belga e coberturas especiais.</p>
+                        <div class="receita-meta">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-users"></i> 20 unidades</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <div class="receita-tags">
+                            <span class="tag">Doce</span>
+                            <span class="tag">Chocolate</span>
+                        </div>
+                        <button class="btn btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+                
+                <div class="receita-card">
+                    <div class="receita-image">
+                        <img src="https://via.placeholder.com/350x250/649B50/FFFFFF?text=Coxinha" alt="Coxinha de Frango">
+                        <div class="receita-difficulty">Intermediário</div>
+                        <button class="receita-bookmark">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Coxinha de Frango</h3>
+                        <p>Salgadinho brasileiro clássico com massa de batata, recheio de frango desfiado e temperos.</p>
+                        <div class="receita-meta">
+                            <span><i class="fas fa-clock"></i> 1h 45min</span>
+                            <span><i class="fas fa-users"></i> 30 unidades</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <div class="receita-tags">
+                            <span class="tag">Salgado</span>
+                            <span class="tag">Frango</span>
+                        </div>
+                        <button class="btn btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+                
+                <div class="receita-card">
+                    <div class="receita-image">
+                        <img src="https://via.placeholder.com/350x250/BF412C/FFFFFF?text=Açaí+Bowl" alt="Açaí Bowl">
+                        <div class="receita-difficulty">Básico</div>
+                        <button class="receita-bookmark">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Açaí Bowl Amazônico</h3>
+                        <p>Açaí puro da Amazônia servido com granola, frutas tropicais e mel de abelhas nativas.</p>
+                        <div class="receita-meta">
+                            <span><i class="fas fa-clock"></i> 15 min</span>
+                            <span><i class="fas fa-users"></i> 2 pessoas</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <div class="receita-tags">
+                            <span class="tag">Saudável</span>
+                            <span class="tag">Açaí</span>
+                        </div>
+                        <button class="btn btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-accent btn-lg">
+                    Ver Todas as Receitas Brasileiras
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Técnicas Brasileiras -->
+    <section id="tecnicas" class="tecnicas-brasil">
+        <div class="container">
+            <div class="section-header">
+                <h2>Técnicas <span class="text-primary">Tradicionais</span></h2>
+                <p>Domine as técnicas culinárias que fazem da cozinha brasileira única no mundo.</p>
+            </div>
+            
+            <div class="tecnicas-grid">
+                <div class="tecnica-card">
+                    <div class="tecnica-image">
+                        <img src="https://via.placeholder.com/300x200/FFAA42/FFFFFF?text=Refogado+Brasileiro" alt="Refogado">
+                        <div class="tecnica-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                                Assistir
+                            </button>
+                        </div>
+                        <div class="tecnica-level">Básico</div>
+                        <div class="tecnica-duration">8 min</div>
+                    </div>
+                    <div class="tecnica-content">
+                        <div class="tecnica-header">
+                            <div class="tecnica-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h3>Refogado Brasileiro</h3>
+                        </div>
+                        <p>A base de muitos pratos brasileiros: como fazer o refogado perfeito com cebola, alho e temperos.</p>
+                        <button class="btn btn-primary">Aprender Técnica</button>
+                    </div>
+                </div>
+                
+                <div class="tecnica-card">
+                    <div class="tecnica-image">
+                        <img src="https://via.placeholder.com/300x200/F07E42/FFFFFF?text=Fritura+no+Dendê" alt="Fritura no Dendê">
+                        <div class="tecnica-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                                Assistir
+                            </button>
+                        </div>
+                        <div class="tecnica-level">Intermediário</div>
+                        <div class="tecnica-duration">12 min</div>
+                    </div>
+                    <div class="tecnica-content">
+                        <div class="tecnica-header">
+                            <div class="tecnica-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3>Fritura no Dendê</h3>
+                        </div>
+                        <p>Técnica tradicional baiana para frituras com dendê, mantendo temperatura e sabor ideais.</p>
+                        <button class="btn btn-primary">Aprender Técnica</button>
+                    </div>
+                </div>
+                
+                <div class="tecnica-card">
+                    <div class="tecnica-image">
+                        <img src="https://via.placeholder.com/300x200/649B50/FFFFFF?text=Preparo+Farofa" alt="Preparo de Farofa">
+                        <div class="tecnica-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                                Assistir
+                            </button>
+                        </div>
+                        <div class="tecnica-level">Básico</div>
+                        <div class="tecnica-duration">10 min</div>
+                    </div>
+                    <div class="tecnica-content">
+                        <div class="tecnica-header">
+                            <div class="tecnica-icon">
+                                <i class="fas fa-wheat-awn"></i>
+                            </div>
+                            <h3>Farofa Perfeita</h3>
+                        </div>
+                        <p>Segredos para fazer farofa crocante e saborosa, acompanhamento essencial da mesa brasileira.</p>
+                        <button class="btn btn-primary">Aprender Técnica</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredientes Brasileiros -->
+    <section id="ingredientes" class="ingredientes-brasil">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ingredientes <span class="text-accent">Únicos</span></h2>
+                <p>Conheça os ingredientes que fazem da culinária brasileira tão especial e diversa.</p>
+            </div>
+            
+            <div class="ingredientes-destaque">
+                <div class="ingrediente-card">
+                    <div class="ingrediente-image dendê">
+                        <div class="ingrediente-overlay"></div>
+                        <div class="ingrediente-content">
+                            <h3>Dendê</h3>
+                            <p>Óleo sagrado da culinária baiana</p>
+                        </div>
+                    </div>
+                    <div class="ingrediente-info">
+                        <h4>Azeite de Dendê</h4>
+                        <p>Extraído da palma africana, é essencial na culinária nordestina. Rico em vitamina A e sabor único.</p>
+                        <div class="ingrediente-uses">
+                            <span>Acarajé</span>
+                            <span>Moqueca</span>
+                            <span>Vatapá</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ingrediente-card">
+                    <div class="ingrediente-image acai">
+                        <div class="ingrediente-overlay"></div>
+                        <div class="ingrediente-content">
+                            <h3>Açaí</h3>
+                            <p>Superfruta amazônica</p>
+                        </div>
+                    </div>
+                    <div class="ingrediente-info">
+                        <h4>Açaí do Pará</h4>
+                        <p>Fruto da palmeira amazônica, rico em antioxidantes e energia. Base da alimentação ribeirinha.</p>
+                        <div class="ingrediente-uses">
+                            <span>Açaí na Tigela</span>
+                            <span>Vitaminas</span>
+                            <span>Sorvetes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ingrediente-card">
+                    <div class="ingrediente-image mandioca">
+                        <div class="ingrediente-overlay"></div>
+                        <div class="ingrediente-content">
+                            <h3>Mandioca</h3>
+                            <p>Raiz brasileira versátil</p>
+                        </div>
+                    </div>
+                    <div class="ingrediente-info">
+                        <h4>Mandioca/Macaxeira</h4>
+                        <p>Raiz nativa do Brasil, base da alimentação indígena. Fonte de carboidratos e fibras.</p>
+                        <div class="ingrediente-uses">
+                            <span>Farofa</span>
+                            <span>Tapioca</span>
+                            <span>Bolos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ingrediente-card">
+                    <div class="ingrediente-image guarana">
+                        <div class="ingrediente-overlay"></div>
+                        <div class="ingrediente-content">
+                            <h3>Guaraná</h3>
+                            <p>Energia da Amazônia</p>
+                        </div>
+                    </div>
+                    <div class="ingrediente-info">
+                        <h4>Guaraná Natural</h4>
+                        <p>Fruto amazônico com propriedades energéticas naturais. Usado pelos índios há séculos.</p>
+                        <div class="ingrediente-uses">
+                            <span>Bebidas</span>
+                            <span>Doces</span>
+                            <span>Suplementos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FlavorWay Brasil</h3>
+                    <p>Celebrando a riqueza e diversidade da culinária brasileira. Dos sabores amazônicos aos temperos nordestinos, uma jornada gastronômica pelo nosso país.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Regiões</h4>
+                    <ul>
+                        <li><a href="#">Nordeste</a></li>
+                        <li><a href="#">Sudeste</a></li>
+                        <li><a href="#">Sul</a></li>
+                        <li><a href="#">Norte</a></li>
+                        <li><a href="#">Centro-Oeste</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Pratos Típicos</h4>
+                    <ul>
+                        <li><a href="#">Feijoada</a></li>
+                        <li><a href="#">Acarajé</a></li>
+                        <li><a href="#">Churrasco</a></li>
+                        <li><a href="#">Moqueca</a></li>
+                        <li><a href="#">Brigadeiro</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Voltar ao FlavorWay</h4>
+                    <ul>
+                        <li><a href="index.html">Página Principal</a></li>
+                        <li><a href="index.html#cuisines">Outras Culinárias</a></li>
+                        <li><a href="index.html#community">Comunidade</a></li>
+                        <li><a href="index.html#techniques">Técnicas Gerais</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlavorWay. Todos os direitos reservados. Feito com ❤️ para os amantes da culinária brasileira.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/culinaria-brasileira.js"></script>
+</body>
+</html>
