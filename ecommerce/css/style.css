@@ -38,8 +38,8 @@ tr:nth-child(even) {
 }
 
 button, input[type="submit"], input[type="button"] {
-    background: #2563eb;
-    color: #fff;
+    background: #cacaca;
+    color: #ffffff;
     border: none;
     padding: 8px 18px;
     border-radius: 4px;
@@ -53,8 +53,30 @@ button:hover, input[type="submit"]:hover, input[type="button"]:hover {
     background: #1746a2;
 }
 
+.contraste {
+    background: #2563eb;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.12);
+    transition: background 0.2s;
+}
+
+.contraste a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+}
+
+.contraste:hover {
+    background: #1746a2;
+}
+
 a {
-    color: #2563eb;
+    color: #0051ff;
     text-decoration: none;
     margin-right: 12px;
 }

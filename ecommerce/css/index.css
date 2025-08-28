@@ -38,7 +38,7 @@ tr:nth-child(even) {
 }
 
 button, input[type="submit"], input[type="button"] {
-    background: #2563eb;
+    background: #a1a1a1;
     color: #fff;
     border: none;
     padding: 8px 18px;
@@ -54,7 +54,7 @@ button:hover, input[type="submit"]:hover, input[type="button"]:hover {
 }
 
 a {
-    color: #2563eb;
+    color: #ffffff;
     text-decoration: none;
     margin-right: 12px;
 }
