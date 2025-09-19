@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlavorWay - Culinária Brasileira</title>
-    <link rel="stylesheet" href="/FlavorWayV2//css/culinariabrasileira.css">
-    <script src="/FlavorWayV2/js/culinariabrasileira.js"></script>
+    <link rel="stylesheet" href="../css/culinariabrasileira.css">
+    <script src="../js/culinariabrasileira.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +21,7 @@
                 </div>
                 
                 <nav class="nav">
-                    <a href="/FlavorWayV2/html/index.html" class="nav-link">
+                    <a href="../html/index.html" class="nav-link">
                         <i class="fas fa-home"></i>
                         <span>Início</span>
                     </a>
@@ -32,6 +32,10 @@
                     <button class="search-btn">
                         <i class="fas fa-search"></i>
                         Buscar
+                    </button>
+                    <button class="login-btn">
+                        
+                        Login
                     </button>
                 </nav>
             </div>
@@ -93,7 +97,7 @@
                 <button class="filtro-btn" data-filtro="nordeste">Nordeste</button>
                 <button class="filtro-btn" data-filtro="sudeste">Sudeste</button>
                 <button class="filtro-btn" data-filtro="sul">Sul</button>
-                <button class="filtro-btn" data-filtro="norte">Norte</button>
+                <button class="filtro-btn" data-filtro="norte" onclick="">Norte</button>
                 <button class="filtro-btn" data-filtro="centro-oeste">Centro-Oeste</button>
             </div>
             

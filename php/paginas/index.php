@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlavorWay - Sua Jornada Culinária</title>
-    <link rel="stylesheet" href="/FlavorWayV2/css/culinariabrasileira.css">
-    <link rel="stylesheet" href="/FlavorWayV2/css/index/components.css">
-    <link rel="stylesheet" href="/FlavorWayV2/css/index/responsive.css">
-    <link rel="stylesheet" href="/FlavorWayV2/css/index/index.css">
+    <link rel="stylesheet" href="../../css/index/culinariabrasileiraregioespadrao.css">
+    <link rel="stylesheet" href="../../css/index/components.css">
+    <link rel="stylesheet" href="../../css/index/responsive.css">
+    <link rel="stylesheet" href="../../css/index/index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -34,6 +34,9 @@
                     <button class="btn btn-secondary">
                         <i class="fas fa-search"></i>
                         Buscar
+                    </button>
+                    <button class="btn btn-secondary">
+                        Login
                     </button>
                 </nav>
                 
@@ -90,7 +93,7 @@
                             <span>120+ receitas</span>
                             <span>15 técnicas</span>
                         </div>
-                        <button class="btn btn-primary" onclick=location.href="/FlavorWayV2/html/culinariabrasileira.html">
+                        <button class="btn btn-primary" onclick=location.href="html/culinariabrasileira.html">
                             Explorar Culinária
                             <i class="fas fa-arrow-right"></i>
                         </button>
